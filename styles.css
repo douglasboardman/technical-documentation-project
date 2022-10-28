@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanssc.css);
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+:root {
+    --header1: #3473a3;
+    --header2: #333333;
+    --body-text: #1a1a1a;
+    --emphasis1: #ffda4a;
+}
+
+body {
+    font-family: 'Noto Sans SC', Helvetica, arial, sans-serif;
+}
+
+header {
+    display: inline-flex;
+    vertical-align: center;
+}
+
+nav {
+    position: fixed;
+    display: block;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 3rem;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    list-style: none;
+    height: 3rem;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    border-top: solid grey 0.5px; 
+}
+
+nav > ul > li:hover {
+    list-style: none;
+    height: 3rem;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    border-top: solid grey 0.5px; 
+    background-color: var(--emphasis1);
+    cursor: pointer;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    margin: auto 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+    color: var(--body-text);
+}
+
+nav > ul > li > a:visited {
+    color: var(--body-text);
+}
+
+nav > ul > li > a:active {
+    color: var(--body-text);
+}
+
+a > span {
+    margin: auto 0;
+}
+
+main {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 300px;
+    padding: 4rem;
+    margin-left: 40px;
+}
+
+h2, h3{
+    font-family: 'Noto Sans SC', serif;
+}
+
+p, li {
+    color: var(--body-text);
+}
+
+h2 {
+    font-weight: 900;
+    color: var(--header1);
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+
+h3 {
+    font-weight: 700;
+    color: var(--header2);
+}
+
+.code {
+    background-color: var(--body-text);
+    color: whitesmoke;
+    width: 50%;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#img-logo {
+    width: 60px;
+    height: 60px;
+}
+
+#site-title{
+    width: 230px;
+    margin-top: -10px;
+    padding: 0 20px 0 20px;
+}

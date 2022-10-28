@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Beginner's Guide to Python</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>
+      <img id="img-logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/115px-Python-logo-notext.svg.png?20220821155029"
+        alt="python-logo" />
+      <h1 id="site-title">Beginner's Guide to Python</h1>
+    </header>
+    <ul>
+      <li><a class="nav-link" href="#what_is_python?"><span>What is Python?</span></a></li>
+      <li><a class="nav-link" href="#what_can_python_do?"><span>What can Python do?</span></a></li>
+      <li><a class="nav-link" href="#why_python?"><span>Why Python?</span></a></li>
+      <li><a class="nav-link" href="#python_syntax_compared_to_other_programming_languages"><span>Python Syntax compared
+            to other programming languages</span></a></li>
+      <li><a class="nav-link" href="#python_install"><span>Python Install</span></a></li>
+      <li><a class="nav-link" href="#python_quickstart"><span>Python Quickstart</span></a></li>
+      <li><a class="nav-link" href="#the_python_command_line"><span>The Python Command Line</span></a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section id="what_is_python?" class="main-section">
+      <header>
+        <h2>What is Python?</h2>
+      </header>
+      <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its
+        high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive
+        for Rapid Application Development, as well as for use as a scripting or glue language to connect existing
+        components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost
+        of program maintenance. Python supports modules and packages, which encourages program modularity and code
+        reuse. The Python interpreter and the extensive standard library are available in source or binary form without
+        charge for all major platforms, and can be freely distributed.</p>
+      <p>Often, programmers fall in love with Python because of the increased productivity it provides. Since there is
+        no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or
+        bad input will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an
+        exception. When the program doesn't catch the exception, the interpreter prints a stack trace. A source level
+        debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting
+        breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself,
+        testifying to Python's introspective power. On the other hand, often the quickest way to debug a program is to
+        add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very
+        effective.</p>
+      <h3>It is used for:</h3>
+
+      <ul>
+        <li>web development (server-side), </li>
+        <li>software development, </li>
+        <li>mathematics,</li>
+        <li>system scripting.</li>
+      </ul>
+    </section>
+    <section id="what_can_python_do?" class="main-section">
+      <header>
+        <h2>What can Python do?</h2>
+      </header>
+      <ul>
+        <li>Python can be used on a server to create web applications.</li>
+        <li>Python can be used alongside software to create workflows.</li>
+        <li>Python can connect to database systems. It can also read and modify files.</li>
+        <li>Python can be used to handle big data and perform complex mathematics.</li>
+        <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+      </ul>
+    </section>
+    <section id="why_python?" class="main-section">
+      <header>
+        <h2>Why Python?</h2>
+      </header>
+      <ul>
+        <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+        <li>Python has a simple syntax similar to the English language.</li>
+        <li>Python has syntax that allows developers to write programs with fewer lines than some other programming
+          languages.</li>
+        <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means
+          that prototyping can be very quick.</li>
+        <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+      </ul>
+
+      <h3>Good to know</h3>
+      <ul>
+        <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However,
+          Python 2, although not being updated with anything other than security updates, is still quite popular.</li>
+        <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated
+          Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when
+          managing larger collections of Python files.</li>
+      </ul>
+    </section>
+    <section id="python_syntax_compared_to_other_programming_languages" class="main-section">
+      <header>
+        <h2>Python Syntax compared to other programming languages</h2>
+      </header>
+      <ul>
+        <li>Python was designed for readability, and has some similarities to the English language with influence from
+          mathematics.</li>
+        <li>Python uses new lines to complete a command, as opposed to other programming languages which often use
+          semicolons or parentheses.</li>
+        <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and
+          classes. Other programming languages often use curly-brackets for this purpose.</li>
+      </ul>
+
+      <div class="example">
+        <h3>Example</h3>
+        <div class="code"><code><span class="pythoncolor">
+            <span class="pythonkeywordcolor" style="color:rgb(122, 122, 238)">print</span>(<span class="pythonstringcolor"
+              style="color:rgb(243, 122, 122)">"Hello, World!"</span>)<span class="pythonnumbercolor" style="color:red">
+            </span> </span></code></div>
+      </div>
+    </section>
+    <section id="python_install" class="main-section">
+      <header>
+        <h2>Python Install</h2>
+      </header>
+
+      <p>Many PCs and Macs will have python already installed.</p>
+
+      <p>To check if you have python installed on a Windows PC, search in the start bar for Python or run the following
+        on the Command Line (cmd.exe):</p>
+
+      <div class="example">
+        <div class="code">
+          <code>
+          C:\Users\<em>Your Name</em>&gt;python --version
+          </code>
+        </div>
+      </div>
+
+      <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the
+        Terminal and type:</p>
+
+      <div class="example">
+        <div class="code">
+          <code>
+          python --version
+        </code>
+        </div>
+      </div>
+
+      <p>If you find that you do not have Python installed on your computer, then you can download it for free from the
+        following website: <a href="https://www.python.org/" target="_blank">https://www.python.org/</a></p>
+    </section>
+    <section id="python_quickstart" class="main-section">
+      <header>
+        <h2>Python Quickstart</h2>
+      </header>
+
+      <p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a
+        text editor and then put those files into the python interpreter to be executed.</p>
+
+      <p>The way to run a python file is like this on the command line:</p>
+
+      <div class="example">
+        <div class="code">
+          <code>
+          C:\Users\<em>Your Name</em>&gt;python helloworld.py
+        </code>
+        </div>
+      </div>
+
+      <p>Where "helloworld.py" is the name of your python file.</p>
+
+      <p>Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
+
+      <div class="example">
+        <p>helloworld.py</p>
+        <div class="code">
+          <code>
+          print("Hello, World!")
+        </code>
+        </div>
+      </div>
+
+      <p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file,
+        and run:</p>
+
+      <div class="example">
+        <div class="code">
+          <code>
+          C:\Users\<em>Your Name</em>&gt;python helloworld.py
+        </code>
+        </div>
+      </div>
+
+
+      <p>The output should read:</p>
+      <div class="example">
+        <div class="code">
+          <code>
+          Hello, World!
+        </code>
+        </div>
+      </div>
+
+      <p>Congratulations, you have written and executed your first Python program.</p>
+
+    </section>
+    <section id="the_python_command_line" class="main-section">
+      <header>
+        <h2>The Python Command Line</h2>
+      </header>
+
+      <p>To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file.
+        This is made possible because Python can be run as a command line itself.</p>
+      <p>Type the following on the Windows, Mac or Linux command line:</p>
+
+      <div class="example">
+        <div class="code">
+          <code>
+          C:\Users\<em>Your Name</em>&gt;python
+        </code>
+        </div>
+      </div>
+
+      Or, if the "python" command did not work, you can try "py":
+
+      <div class="example">
+        <div class="code">
+          <code>
+          C:\Users\<em>Your Name</em>&gt;py
+        </code>
+        </div>
+      </div>
+
+      <p>From there you can write any python, including our hello world example from earlier in the tutorial:</p>
+
+      <div class="example">
+        <div class="code">
+          <code>
+          <span style="opacity:0.5">C:\Users\<em>Your Name</em>&gt;python<br>
+            Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32<br>
+            Type "help", "copyright", "credits" or "license" for more information.</span><br>
+          &gt;&gt;&gt; print("Hello, World!")
+        </code>
+        </div>
+      </div>
+
+      <p>Which will write "Hello, World!" in the command line:</p>
+
+      <div class="example">
+        <div class="code">
+          <code>
+          <span style="opacity:0.5">C:\Users\<em>Your Name</em>&gt;python<br>
+            Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32<br>
+            Type "help", "copyright", "credits" or "license" for more information.<br>
+            &gt;&gt;&gt; print("Hello, World!")</span><br>
+          Hello, World!
+        </code>
+        </div>
+      </div>
+
+
+      <p>Whenever you are done in the python command line, you can simply type the following to quit the python command
+        line interface:</p>
+
+      <div class="example">
+        <div class="code">
+          <code>
+            exit()
+          </code>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
